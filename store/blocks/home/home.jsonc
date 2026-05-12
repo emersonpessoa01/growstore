@@ -1,79 +1,80 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      // "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      // "flex-layout.row#deals",
+      // "__fold__",
+      // "rich-text#shelf-title",
+      // "flex-layout.row#shelf",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
+      "flex-layout.row#example"
     ]
   },
-
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  /* BLOCKS A SEREM MOSTRADOS NA HOME */
+  "flex-layout.row#example": {
+    "title": "Infos detail",
+    "children": [
+      "flex-layout.col#col-image",
+      "flex-layout.col#col-text"
+    ],
     "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
-        }
-      ]
+      "blockClass": "classe-custom-flexrow"
+    }
+    // <div class="row classe-custom-flexrow">
+    //   <div class="col">
+    //        <img alt="" src="" title="" />
+    //    </div>
+    //   <div class="col">
+    //       <h2>fgdnfjngk</h2>
+    //       <p></p>
+    //    </div>
+    // </div>
+  },
+  "flex-layout.col#col-image": {
+    "title": "Container Image",
+    "children": [
+      "image#product-image"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ""
     }
   },
-  "slider-layout#demo-images": {
+  "image#product-image": {
+    "title": "Image Left",
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "maxWidth": "400px",
+      "alt": "Image product example",
+      "src": "assets/images/sofa.png"
     }
   },
-
-  "rich-text#shelf-title": {
+  "flex-layout.col#col-text": {
+    "title": "Container Text",
+    "children": [
+      "rich-text#title",
+      "rich-text#description"
+    ],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "verticalAlign": "middle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+  "rich-text#title": {
+    "title": "Titulo",
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "text": "## Title of product"
     }
   },
-  "slider-layout#demo-products": {
+  "rich-text#description": {
+    "title": "Descrição",
     "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "text": "- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate odio bibendum, molestie justo et, ultrices quam. Aenean at hendrerit purus, non blandit augue. Morbi sit amet justo id massa commodo fringilla. Proin non porttitor augue, sed porta felis. Ut aliquam euismod lobortis. Integer non ipsum urna. Aenean dapibus justo nulla, finibus hendrerit ipsum laoreet vitae. Integer hendrerit, tellus at fringilla ornare, purus diam faucibus tortor, id volutpat eros neque ut urna. Integer non nisi quis urna tincidunt dignissim id et ipsum.**Suspendisse laoreet tincidunt nisi non viverra. Proin lobortis massa nec dui** consectetur dapibus. Aenean pretium viverra augue vitae rutrum. Maecenas malesuada sodales semper. In diam ligula, semper in feugiat ut, luctus vel nibh. Phasellus ultricies ipsum ac aliquam sollicitudin. Morbi eget sapien nec elit scelerisque tempus ac id nulla. Aenean vitae dui purus.*Suspendisse non turpis ut dolor egestas consectetur ut a tortor*. "
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -85,20 +86,6 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }
