@@ -1,0 +1,38 @@
+
+.flexRow--deals {
+  background-color: transparent;
+  padding: 28px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* CSS CUSTOM APPS */
+.flexRow--custom-padding {
+  padding: 2rem;
+}
+
+.flexCol--custom-border-col-image {
+  border: none;
+}
+
+.flexCol--custom-card {
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 145px;
+  height: 170px;
+}
+
+.flexCol--selected {
+  background-color: #DB4444;
+  cursor: pointer;
+}
+
+

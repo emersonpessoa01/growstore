@@ -1,85 +1,154 @@
 {
   "flex-layout.row#deals": {
     "children": [
-      "flex-layout.col#deals1",
-      "flex-layout.col#deals2",
-      "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
+      "flex-layout.col#card-phones",
+      "flex-layout.col#card-computers",
+      "flex-layout.col#card-smartwatch",
+      "flex-layout.col#card-camera",
+      "flex-layout.col#card-headphones",
+      "flex-layout.col#card-gaming"
     ],
     "props": {
-      "blockClass": "deals"
+      "blockClass": "deals",
+      "colGap": "6",
+      "horizontalAlign": "center"
     }
   },
-
-  "flex-layout.col#deals1": {
+  "flex-layout.col#card-phones": {
     "children": [
       "image#deal1",
       "rich-text#deal1"
-    ]
+    ],
+    "props": {
+      "blockClass": "custom-card",
+      "verticalAlign": "middle"
+    }
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "src": "assets/images/Category-CellPhone.png",
+      "maxHeight": "56px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Phones",
       "blockClass": "deals"
     }
   },
-  "flex-layout.col#deals2": {
+  "flex-layout.col#card-computers": {
     "children": [
       "image#deal2",
       "rich-text#deal2"
-    ]
+    ],
+    "props": {
+      "blockClass": "custom-card",
+      "verticalAlign": "middle"
+    }
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "src": "assets/images/Category-Computer.png",
+      "maxHeight": "56px"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Computers",
       "blockClass": "deals"
     }
   },
-  "flex-layout.col#deals3": {
+  "flex-layout.col#card-smartwatch": {
     "children": [
       "image#deal3",
       "rich-text#deal3"
-    ]
+    ],
+    "props": {
+      "blockClass": "custom-card",
+      "verticalAlign": "middle"
+    }
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "src": "assets/images/Category-SmartWatch.png",
+      "maxHeight": "56px"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "SmartWatch's",
       "blockClass": "deals"
     }
   },
-  "flex-layout.col#deals4": {
+  "flex-layout.col#card-camera": {
     "children": [
       "image#deal4",
       "rich-text#deal4"
-    ]
+    ],
+    "props": {
+      "blockClass": [
+        "custom-card",
+        "selected"
+      ],
+      "verticalAlign": "middle"
+    }
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "src": "assets/images/Category-Camera.png",
+      "maxHeight": "56px"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Cameras",
+      "blockClass": [
+        "deals",
+        "selected-text"
+      ]
+    }
+  },
+  "flex-layout.col#card-headphones": {
+    "children": [
+      "image#deal5",
+      "rich-text#deal5"
+    ],
+    "props": {
+      "blockClass": "custom-card",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#deal5": {
+    "props": {
+      "src": "assets/images/Category-Headphone.png",
+      "maxHeight": "56px"
+    }
+  },
+  "rich-text#deal5": {
+    "props": {
+      "text": "Headphones",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#card-gaming": {
+    "children": [
+      "image#deal6",
+      "rich-text#deal6"
+    ],
+    "props": {
+      "blockClass": "custom-card",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#deal6": {
+    "props": {
+      "src": "assets/images/Category-Gamepad.png",
+      "maxHeight": "56px"
+    }
+  },
+  "rich-text#deal6": {
+    "props": {
+      "text": "Games",
       "blockClass": "deals"
     }
   }

@@ -4,7 +4,7 @@
       // "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      // "flex-layout.row#deals",
+      "flex-layout.row#deals",
       // "__fold__",
       // "rich-text#shelf-title",
       // "flex-layout.row#shelf",
@@ -23,7 +23,7 @@
       "flex-layout.col#col-text"
     ],
     "props": {
-      "blockClass": "classe-custom-flexrow"
+      "blockClass": "custom-padding"
     }
     // <div class="row classe-custom-flexrow">
     //   <div class="col">
@@ -42,15 +42,15 @@
     ],
     "props": {
       "horizontalAlign": "center",
-      "blockClass": ""
+      "blockClass": "custom-border-col-image"
     }
   },
   "image#product-image": {
     "title": "Image Left",
     "props": {
-      "maxWidth": "400px",
       "alt": "Image product example",
-      "src": "assets/images/sofa.png"
+      "src": "assets/images/sofa.png",
+      "blockClass": "image-custom"
     }
   },
   "flex-layout.col#col-text": {

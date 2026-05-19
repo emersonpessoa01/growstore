@@ -1,5 +1,5 @@
 .container--deals {
-  color: #ffffff;
+  color: #2b2b2b;
   text-align: center;
   justify-content: center;
 }
@@ -87,4 +87,8 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+.paragraph--selected-text {
+  color: #ffff;
 }

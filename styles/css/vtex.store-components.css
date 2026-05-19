@@ -111,3 +111,13 @@
 .image {
   image-rendering: -webkit-optimize-contrast;
 }
+
+
+/* CSS HANDLES AULA  */
+.imageElement--image-custom {
+  max-width: 400px;
+}
+
+.imageElement--image-custom:hover {
+  max-width: 600px;
+}
