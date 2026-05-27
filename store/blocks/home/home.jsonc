@@ -12,8 +12,15 @@
       // "rich-text#question",
       // "rich-text#link",
       // "newsletter"
-      "flex-layout.row#example"
+      "flex-layout.row#example",
+      "benefits-banner"
     ]
+  },
+  "benefits-banner":{
+    "props": {
+      "name": "Emerson Pessoa",
+      "dataCustom": "27/05/2026"
+    }
   },
   /* BLOCKS A SEREM MOSTRADOS NA HOME */
   "flex-layout.row#example": {

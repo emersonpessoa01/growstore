@@ -92,3 +92,10 @@
 .paragraph--selected-text {
   color: #ffff;
 }
+
+/* Quando houver hover em QUALQUER elemento que tenha a classe custom-card,
+   o parágrafo dentro do rich-text muda de cor */
+:global(.vtex-flex-layout-0-x-flexCol--custom-card):hover .paragraph--deals {
+  color: #ffff;
+  transition: color 0.2s ease-in-out;
+}

@@ -70,7 +70,7 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
@@ -112,7 +112,6 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
-
 /* CSS HANDLES AULA  */
 .imageElement--image-custom {
   max-width: 400px;
@@ -120,4 +119,16 @@
 
 .imageElement--image-custom:hover {
   max-width: 600px;
+}
+
+/* CSS CUSTOM DEALS */
+/* Quando houver hover no container pai, altera o elemento de imagem interno */
+:global(.vtex-flex-layout-0-x-flexCol--custom-card):hover
+  :global(.vtex-store-components-3-x-imageElement) {
+  opacity: 1; /* Mantive em 1 para o branco brilhar bem */
+  transform: scale(1.05) translateY(-10px);
+  transition: all 0.4s ease-in-out;
+
+  /* Truque do filtro para forçar a imagem a ficar branca */
+  filter: brightness(0) invert(1);
 }

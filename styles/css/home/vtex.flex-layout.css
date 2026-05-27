@@ -2,11 +2,18 @@
 .flexRow--deals {
   background-color: transparent;
   padding: 28px 0px;
+
 }
 
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
+/* CSS CUSTOM APPS */
+.stretchChildrenWidth{
+  width: 100% !important;
+  padding: 0 !important;
+}
+
 
 .flexRow--deals .flexCol {
   align-items: center;
@@ -28,11 +35,29 @@
   border: 1px solid grey;
   width: 145px;
   height: 170px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
+
+/* CSS CUSTOM APPS */
+.flexCol--custom-card:hover {
+  background-color: #DB4444;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
 
 .flexCol--selected {
   background-color: #DB4444;
   cursor: pointer;
 }
 
+
+/* CSS CUSTOM APPS */
+.flexRowContent--deals{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 20px;
+  padding: 2rem 2%;
+}
 
