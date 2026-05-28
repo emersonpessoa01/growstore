@@ -2,6 +2,7 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
+      "benefits-banner",
       "condition-layout.product#availability",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
@@ -9,8 +10,17 @@
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
+
     ]
   },
+
+  "benefits-banner": {
+    "props": {
+      "name": "Emerson Pessoa",
+      "dataCustom": "27/05/2026"
+    }
+  },
+
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -51,7 +61,10 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
   },
 
   "stack-layout": {

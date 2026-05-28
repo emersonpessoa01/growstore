@@ -1,3 +1,4 @@
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -117,9 +118,9 @@
   max-width: 400px;
 }
 
-.imageElement--image-custom:hover {
+/* .imageElement--image-custom:hover {
   max-width: 600px;
-}
+} */
 
 /* CSS CUSTOM DEALS */
 /* Quando houver hover no container pai, altera o elemento de imagem interno */
