@@ -12,15 +12,8 @@
       // "rich-text#question",
       // "rich-text#link",
       // "newsletter"
-      "flex-layout.row#example",
-      "benefits-banner"
+      "flex-layout.row#example"
     ]
-  },
-  "benefits-banner":{
-    "props": {
-      "name": "Emerson Pessoa",
-      "dataCustom": "27/05/2026"
-    }
   },
   /* BLOCKS A SEREM MOSTRADOS NA HOME */
   "flex-layout.row#example": {
@@ -44,9 +37,7 @@
   },
   "flex-layout.col#col-image": {
     "title": "Container Image",
-    "children": [
-      "image#product-image"
-    ],
+    "children": ["image#product-image"],
     "props": {
       "horizontalAlign": "center",
       "blockClass": "custom-border-col-image"
