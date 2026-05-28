@@ -16,7 +16,8 @@
 
   "benefits-banner": {
     "props": {
-      "name": "Emerson Pessoa"
+      "name": "Emerson Pessoa",
+      "dataCustom": "Campanha de Maio"
     }
   },
 
