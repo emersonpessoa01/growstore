@@ -2,7 +2,6 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      "benefits-banner",
       "condition-layout.product#availability",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
@@ -10,15 +9,7 @@
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
-
     ]
-  },
-
-  "benefits-banner": {
-    "props": {
-      "name": "Emerson Pessoa",
-      "dataCustom": "Campanha de Maio"
-    }
   },
 
   "flex-layout.row#specifications-title": {
@@ -116,6 +107,7 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "benefits-banner",
       "product-installments",
       "product-separator",
       "product-identifier.product",
@@ -128,6 +120,13 @@
       "shipping-simulator",
       "share#default"
     ]
+  },
+
+  "benefits-banner": {
+    "props": {
+      "discount": "10",
+      "installments": "10"
+    }
   },
 
   "flex-layout.row#product-name": {
