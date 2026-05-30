@@ -3,6 +3,6 @@
   "tabWidth": 2,
   "semi": true,
   "singleQuote": false,
-  "printWidth": 60,
-  "jsdocPrintWidth": 60
+  "printWidth": 80,
+  "@vtex/prettier-config": true
 }

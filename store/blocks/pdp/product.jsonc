@@ -125,7 +125,7 @@
   "benefits-banner": {
     "props": {
       "discount": "10",
-      "installments": "10"
+      "installments": "12"
     }
   },
 
