@@ -8,7 +8,7 @@ type Props = {
   installments?: string;
 };
 
-function BenefitsBanner({ discount, installments }: Props) {
+function CustomBanner({ discount, installments }: Props) {
   const productContext = useProduct();
   // const product = productContext?.product;
 
@@ -71,7 +71,7 @@ function BenefitsBanner({ discount, installments }: Props) {
   );
 }
 
-BenefitsBanner.schema = schema;
-BenefitsBanner.defaultProps = defaultProps;
+CustomBanner.schema = schema;
+CustomBanner.defaultProps = defaultProps;
 
-export default BenefitsBanner;
+export default CustomBanner;

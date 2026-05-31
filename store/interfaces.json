@@ -1,5 +1,6 @@
 {
-    "benefits-banner":{
-        "component":"BenefitsBanner"
-    }
+  "custom-banner": {
+    "component": "CustomBanner",
+    "composition": "children"
+  }
 }
