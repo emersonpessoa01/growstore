@@ -1,0 +1,48 @@
+.bannerContainer {
+  background-color: #d70b0b;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* ul */
+.benefitsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* Container dos textos */
+.benefitTextContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Texto */
+.benefitMainText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Subtexto */
+.benefitSubText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #ffffff;
+  font-size: 12px;
+}
