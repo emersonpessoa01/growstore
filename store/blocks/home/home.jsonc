@@ -16,6 +16,22 @@
       "flex-layout.row#example"
     ]
   },
+
+  "benefits-banner": {
+    "props": {
+      "id": "benefits-banner-home",
+      "layout": "horizontal",
+      "iconUrl1": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/d52b4c8a-8e7d-4958-9915-8ae951c58522___d98f2c0ca47af2d2df8adde7c850e6d8.png",
+      "mainText1": "Frete Grátis",
+      "subText1": "Em compras acima de R$ 150,00",
+      "iconUrl2": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/b12158ac-f315-4cb9-9861-3cbc0b581c8d___47370334bab1302be7a5261743447a84.png",
+      "mainText2": "Até 6x Sem Juros",
+      "subText2": "Ou desconto no PIX",
+      "iconUrl3": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/4b7f5c42-a8da-4f41-a76f-29465229e6f9___e4c87d40fea108a182ebfc0b53b18036.png",
+      "mainText3": "Entrega Rápida",
+      "subText3": "Receba em tempo recorde"
+    }
+  },
   /* BLOCKS A SEREM MOSTRADOS NA HOME */
   "flex-layout.row#example": {
     "title": "Infos detail",

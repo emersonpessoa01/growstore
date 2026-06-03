@@ -1,48 +1,104 @@
+/* Container Principal */
 .bannerContainer {
-  background-color: #d70b0b;
-  padding: 20px 0;
+  background-color:#DB4444;
+  padding: 30px 20px;
   width: 100%;
 }
 
-/* ul */
+/* Lista base*/
 .benefitsList {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  list-style: none;
 }
 
-/* Container dos textos */
+/* Item individual */
+.benefitItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 280px; */
+}
+
+.benefitItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  filter: brightness(0) invert(1);
+}
+
+/* Ícone */
+.benefitIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Container de Textos */
 .benefitTextContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
 }
 
-/* Texto */
+/* Texto Principal */
 .benefitMainText {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  font-weight: bold;
   color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 /* Subtexto */
 .benefitSubText {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
   color: #ffffff;
   font-size: 12px;
+  font-weight: 300;
+  opacity: 0.9;
+  line-height: 1.4;
 }
+/* Quando for Horizontal */
+.benefitsList--horizontal {
+  flex-direction: row;
+}
+
+/* Quando for Vertical */
+.benefitsList--vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefitsList--vertical .benefitItem {
+  width: 100%;
+}
+
+.benefitsList--vertical .benefitItemContainer {
+  justify-content: flex-start;
+}
+
+/* @media screen and (max-width: 991px) {
+  .benefitsList {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .benefitItem {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .benefitItemContainer {
+    justify-content: flex-start;
+  }
+} */
