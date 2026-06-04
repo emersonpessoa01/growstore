@@ -1,104 +1,60 @@
 /* Container Principal */
-.bannerContainer {
-  background-color:#DB4444;
+.container {
+  background-color: #DB4444;
   padding: 30px 20px;
   width: 100%;
-}
-
-/* Lista base*/
-.benefitsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Item individual */
-.benefitItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* min-width: 280px; */
+/* Modificadores de Layout */
+.container--horizontal {
+  flex-direction: row;
 }
 
-.benefitItemContainer {
+.container--vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Item individual */
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
   opacity: 1;
-  transition: all 0.4s ease-in-out;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); /* Mantém o ícone branco */
 }
 
 /* Ícone */
-.benefitIcon {
+.icon {
   width: 40px;
   height: 40px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
-/* Container de Textos */
-.benefitTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Texto Principal */
-.benefitMainText {
+.mainText {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.2;
+  text-align: center;
 }
 
 /* Subtexto */
-.benefitSubText {
+.subText {
   color: #ffffff;
   font-size: 12px;
   font-weight: 300;
   opacity: 0.9;
   line-height: 1.4;
+  text-align: center;
 }
-/* Quando for Horizontal */
-.benefitsList--horizontal {
-  flex-direction: row;
-}
-
-/* Quando for Vertical */
-.benefitsList--vertical {
-  flex-direction: column;
-  align-items: center;
-}
-
-.benefitsList--vertical .benefitItem {
-  width: 100%;
-}
-
-.benefitsList--vertical .benefitItemContainer {
-  justify-content: flex-start;
-}
-
-/* @media screen and (max-width: 991px) {
-  .benefitsList {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 20px;
-  }
-
-  .benefitItem {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .benefitItemContainer {
-    justify-content: flex-start;
-  }
-} */

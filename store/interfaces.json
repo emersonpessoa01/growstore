@@ -1,6 +1,5 @@
 {
   "custom-banner": {
-    "component": "CustomBanner",
-    "composition": "children"
+    "component": "CustomBanner"
   }
 }

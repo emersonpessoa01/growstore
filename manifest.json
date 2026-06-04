@@ -65,9 +65,9 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "partnersigrowdev.custom-banner-app": "0.x",
+    "vtex.product-context": "0.x",
     "partnersigrowdev.benefits-banner-app": "0.x",
-    "vtex.product-context": "0.x"
+    "partnersigrowdev.custom-banner-app": "0.x"
   },
   "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

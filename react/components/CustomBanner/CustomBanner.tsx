@@ -20,8 +20,11 @@ function CustomBanner({ discount, installments }: Props) {
   //   year: "numeric"
   // });
   const listPrice =
-    productContext?.selectedItem?.sellers[0].commertialOffer.ListPrice;
-  const installmentsValue = listPrice ? listPrice / Number(installments) : 0;
+    productContext?.selectedItem?.sellers[0].commertialOffer
+      .ListPrice;
+  const installmentsValue = listPrice
+    ? listPrice / Number(installments)
+    : 0;
 
   return (
     <div
@@ -31,7 +34,7 @@ function CustomBanner({ discount, installments }: Props) {
         borderRadius: "8px",
         border: ".1px solid rgba(0, 0, 0, .1)",
         maxWidth: "45rem",
-        width: "100%"
+        width: "100%",
       }}
     >
       {/* <h1
@@ -54,16 +57,22 @@ function CustomBanner({ discount, installments }: Props) {
         Data: {dateCurrent} {dataCustom && `| Custom: ${dataCustom}`}
       </p> */}
 
-      <span style={{ color: "#555", margin: 0, fontSize: "12px" }}>
+      <span
+        style={{
+          color: "#555",
+          margin: 0,
+          fontSize: "12px",
+        }}
+      >
         Em até {installments} de R${" "}
         {installmentsValue?.toLocaleString("pt-BR", {
           style: "currency",
-          currency: "BRL"
+          currency: "BRL",
         })}{" "}
         sem juros você poderá pagar à vista R${" "}
         {listPrice?.toLocaleString("pt-BR", {
           style: "currency",
-          currency: "BRL"
+          currency: "BRL",
         })}{" "}
         ou ganhar {discount}% de desconto no boleto.
       </span>
