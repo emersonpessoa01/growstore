@@ -20,15 +20,18 @@
     "props": {
       "id": "benefits-banner-home",
       "layout": "horizontal",
-      "iconUrl1": "https://cdn-icons-png.flaticon.com/512/2769/2769339.png",
-      "mainText1": "Frete Grátis",
-      "subText1": "Em compras acima de R$ 150,00",
-      "iconUrl2": "https://cdn-icons-png.flaticon.com/512/4021/4021708.png",
-      "mainText2": "Até 6x Sem Juros",
-      "subText2": "Ou desconto no PIX",
-      "iconUrl3": "https://cdn-icons-png.flaticon.com/512/5637/5637217.png",
-      "mainText3": "Entrega Rápida",
-      "subText3": "Receba em tempo recorde"
+      "iconUrl1": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/1948cf33-8276-4e18-a138-8359d8ab1715___125465f6b6b13229ed3e287e3128be08.svg",
+      "mainText1": "embalagem premium",
+      "subText1": "produtos embalados com cuidado e identidade visual exclusiva",
+      "iconUrl2": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/5bc5e0cb-f284-49fc-902f-de7f8f0ff82e___ac40ad4759434a5cd3c1f171de13ab0b.svg",
+      "mainText2": "qualidade garantida",
+      "subText2": "todos os produtos passam por um controle de qualidade rigoroso",
+      "iconUrl3": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/8bfcd7aa-03e9-4eee-b82d-50de82e29d5b___f400f95174034aa51eca29601e774d24.png",
+      "mainText3": "troca fácil",
+      "subText3": "políticas de trocas e devoluções em até 30 dias",
+      "iconUrl4": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/fcc75523-a9e6-454e-b965-c77292c72e9d___ba59d47f39e648c3c30e120df395de6c.svg",
+      "mainText4": "suporte dedicado",
+      "subText4": "atendimento especializado de segunda a sexta feira"
     }
   },
 
