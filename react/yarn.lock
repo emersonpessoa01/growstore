@@ -5711,9 +5711,9 @@ verror@1.10.0:
   version "0.16.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.1/public/@types/vtex.rich-text#26d53b5bdfb7da97a2e884f85167ead458be9e1d"
 
-"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.147.0/public/@types/vtex.search-result":
-  version "3.147.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.147.0/public/@types/vtex.search-result#2a6816769d22692cf9a874b6fda640400bd4b2f0"
+"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.147.2/public/@types/vtex.search-result":
+  version "3.147.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.147.2/public/@types/vtex.search-result#7fd0cb4d7a2833e2edbfeef97f068f4094bd5dfd"
 
 "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf":
   version "1.49.0"

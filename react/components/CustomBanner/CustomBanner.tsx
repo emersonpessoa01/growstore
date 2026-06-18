@@ -3,12 +3,27 @@ import { useProduct } from "vtex.product-context";
 import { schema } from "./schemas/schema";
 import { defaultProps } from "./schemas/defaultProps";
 
-type Props = {
+type CustomBannerProps = {
   discount?: string;
   installments?: string;
+  icon?: string;
+  textColor?: string;
+  date?: string;
+  testSelect?: string;
+  testBoolean?: boolean;
+  testRadio?: string;
 };
 
-function CustomBanner({ discount, installments }: Props) {
+const CustomBanner: StorefrontFunctionComponent<CustomBannerProps> = ({
+  discount,
+  installments,
+  icon,
+  textColor,
+  date,
+  testSelect,
+  testBoolean,
+  testRadio,
+}: CustomBannerProps) => {
   const productContext = useProduct();
   // const product = productContext?.product;
 
@@ -25,6 +40,18 @@ function CustomBanner({ discount, installments }: Props) {
   const installmentsValue = listPrice
     ? listPrice / Number(installments)
     : 0;
+
+  console.log(
+    "Props do CustomBanner:",
+    discount,
+    installments,
+    icon,
+    textColor,
+    date,
+    testSelect,
+    testBoolean,
+    testRadio,
+  );
 
   return (
     <div
@@ -59,7 +86,7 @@ function CustomBanner({ discount, installments }: Props) {
 
       <span
         style={{
-          color: "#555",
+          color: textColor,
           margin: 0,
           fontSize: "12px",
         }}
@@ -76,9 +103,10 @@ function CustomBanner({ discount, installments }: Props) {
         })}{" "}
         ou ganhar {discount}% de desconto no boleto.
       </span>
+      {icon && <img src={icon} alt="Imagem do produto" />}
     </div>
   );
-}
+};
 
 CustomBanner.schema = schema;
 CustomBanner.defaultProps = defaultProps;
