@@ -2,6 +2,7 @@ import React from "react";
 import { useProduct } from "vtex.product-context";
 import { schema } from "./schemas/schema";
 import { defaultProps } from "./schemas/defaultProps";
+import { index as RichText } from "vtex.rich-text";
 
 type CustomBannerProps = {
   discount?: string;
@@ -12,6 +13,7 @@ type CustomBannerProps = {
   testSelect?: string;
   testBoolean?: boolean;
   testRadio?: string;
+  richtext?: string;
 };
 
 const CustomBanner: StorefrontFunctionComponent<CustomBannerProps> = ({
@@ -23,6 +25,7 @@ const CustomBanner: StorefrontFunctionComponent<CustomBannerProps> = ({
   testSelect,
   testBoolean,
   testRadio,
+  richtext,
 }: CustomBannerProps) => {
   const productContext = useProduct();
   // const product = productContext?.product;
@@ -104,6 +107,17 @@ const CustomBanner: StorefrontFunctionComponent<CustomBannerProps> = ({
         ou ganhar {discount}% de desconto no boleto.
       </span>
       {icon && <img src={icon} alt="Imagem do produto" />}
+      {date && (
+        <p>
+          Data:{" "}
+          {new Date(date).toLocaleDateString("pt-BR", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+          })}
+        </p>
+      )}
+      <RichText text={richtext} />
     </div>
   );
 };

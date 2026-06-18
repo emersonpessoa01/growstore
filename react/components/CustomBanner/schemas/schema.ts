@@ -133,5 +133,14 @@ export const schema = {
         "ui:widget": "radio",
       },
     },
+    richtext:{
+        title: "Texto do Componente",
+        description: "Exemplo de Richtext",
+        type: "string",
+        defaultProps: defaultProps.richtext,
+        widget: {
+          "ui:widget": "textarea",
+        },
+    }
   },
 };
