@@ -4,6 +4,7 @@
       // "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "grow-dev-countdown",
       "flex-layout.row#deals",
       "benefits-banner",
       // "__fold__",
@@ -16,6 +17,7 @@
       "flex-layout.row#example"
     ]
   },
+  "grow-dev-countdown": {},
   "benefits-banner": {
     "props": {
       "id": "benefits-banner-home",
