@@ -1,5 +1,8 @@
 {
   "custom-banner": {
     "component": "CustomBanner"
+  },
+  "custom-freight-bar": {
+    "component": "CustomFreightBar"
   }
 }
